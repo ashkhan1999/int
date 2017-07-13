@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+	<div id="cover">
+		<div id="prof">
+			<input type="file" name="pic" id="profileimage" accept="image/gif, image/jpeg, image/png">
+			<label for="profileimage"><img src="cam.png"></label>
+		</div>
+		<input type="file" name="pac" id="coverimage" accept="image/gif, image/jpeg, image/png">
+		<label for="coverimage"><img id="edit" src="edit.png"></label>
+	</div>
+	</form>
+	<div style="position: absolute;" id="formdiv">
+		<form id="signupform" action="success.html">
+			<h1 style="font-size: 400%; color: #4286f4; margin-bottom: 0.3em";>Basic Information</h1>
+			<div style="text-align: center;">
+				<input type="text" name="fname" placeholder="Full Name" required="required">
+				<input type="email" name="email" placeholder="Email" required="required">
+			</div>
+			<h1 style="font-size: 400%; color: #4286f4; margin-top: 1em; margin-left: -5.3em; margin-bottom: 0.3em;">Private Information</h1>
+			<div style="text-align: center;">
+				<input type="password" name="pword" placeholder="Password" minlength="6" required="required">
+				<input type="number" name="tlnum" placeholder="Mobile" required="required">
+			</div>
+			<div class="knopka">
+				<input type="submit" value="Sign-up">
+			</div>
+			<div style="text-align: center; font-size: 200%; margin-top: 20px; ">
+				<a style="text-decoration: none; color: blue;" href="signin.html">Already have an account ?</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
